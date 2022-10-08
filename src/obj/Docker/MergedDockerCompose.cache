@@ -1,0 +1,16 @@
+services:
+  valhalla.identity.api:
+    build:
+      context: D:\projects\ValhallaWeb\src
+      dockerfile: Services/Identity/Valhalla.Identity.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: valhallaidentityapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\bochi\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\bochi\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

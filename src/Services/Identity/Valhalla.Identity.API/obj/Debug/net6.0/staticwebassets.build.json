@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rhe7VRFb800iBYfaKG+cWlsVHhzpiAElFlb/3g3ne4I=",
+  "Source": "Valhalla.Identity.API",
+  "BasePath": "_content/Valhalla.Identity.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

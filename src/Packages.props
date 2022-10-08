@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!-- Enable central package management -->
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<Import Project="Valhalla.Directory.Build.props" />
+	<Import Project="Services/Identity/Valhalla.Identity.API/Valhalla.Identity.Directory.Build.props"/>
+</Project>

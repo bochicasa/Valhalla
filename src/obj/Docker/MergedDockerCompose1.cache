@@ -1,0 +1,38 @@
+services:
+  valhalla.identity.api:
+    build:
+      context: D:\projects\ValhallaWeb\src
+      dockerfile: Services/Identity/Valhalla.Identity.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Valhalla.Identity.API
+      target: base
+    container_name: Valhalla.Identity.API
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: valhallaidentityapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/Valhalla.Identity.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - D:\projects\ValhallaWeb\src\Services\Identity\Valhalla.Identity.API:/app:rw
+    - C:\Users\bochi\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\bochi\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\bochi\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\bochi\.nuget\packages:/root/.nuget/packages:ro
+    - D:\projects\ValhallaWeb\src:/src:rw
+version: '3.4'

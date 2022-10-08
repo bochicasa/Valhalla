@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<Import Project="../../../Directory.Packages.props" />
+	<ItemGroup Label="Identity Server">
+		<PackageVersion Include="IdentityServer4.AspNetIdentity" Version="4.0.0" />
+		<PackageVersion Include="IdentityServer4.EntityFramework.Storage" Version="4.0.0" />
+		<PackageVersion Include="IdentityServer4.EntityFramework" Version="4.0.0" />
+		<PackageVersion Include="IdentityServer4.Storage" Version="4.0.0" />
+		<PackageVersion Include="IdentityServer4" Version="4.0.0" />
+		<PackageVersion Include="Swashbuckle.AspNetCore" Version="6.2.1" />
+	</ItemGroup>
+</Project>

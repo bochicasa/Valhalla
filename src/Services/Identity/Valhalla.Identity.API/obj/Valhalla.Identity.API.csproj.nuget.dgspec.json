@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\projects\\ValhallaWeb\\src\\Services\\Identity\\Valhalla.Identity.API\\Valhalla.Identity.API.csproj": {}
+  },
+  "projects": {
+    "D:\\projects\\ValhallaWeb\\src\\Services\\Identity\\Valhalla.Identity.API\\Valhalla.Identity.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\ValhallaWeb\\src\\Services\\Identity\\Valhalla.Identity.API\\Valhalla.Identity.API.csproj",
+        "projectName": "Valhalla.Identity.API",
+        "projectPath": "D:\\projects\\ValhallaWeb\\src\\Services\\Identity\\Valhalla.Identity.API\\Valhalla.Identity.API.csproj",
+        "packagesPath": "C:\\Users\\bochi\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\ValhallaWeb\\src\\Services\\Identity\\Valhalla.Identity.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\bochi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "IdentityServer4.AspNetIdentity": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "IdentityServer4.EntityFramework.Storage": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "IdentityServer4.Storage": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.SQLServer": {
+              "target": "Package",
+              "version": "[6.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.1, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "IdentityServer4": "[4.0.0, )",
+            "IdentityServer4.AspNetIdentity": "[4.0.0, )",
+            "IdentityServer4.EntityFramework": "[4.0.0, )",
+            "IdentityServer4.EntityFramework.Storage": "[4.0.0, )",
+            "IdentityServer4.Storage": "[4.0.0, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[6.0.0, )",
+            "Microsoft.EntityFrameworkCore.Design": "[6.0.0, )",
+            "Microsoft.EntityFrameworkCore.Relational": "[6.0.0, )",
+            "Microsoft.EntityFrameworkCore.SQLServer": "[6.0.0, )",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "[1.17.0, )",
+            "Swashbuckle.AspNetCore": "[6.2.1, )",
+            "System.Collections.NonGeneric": "[4.3.0, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
